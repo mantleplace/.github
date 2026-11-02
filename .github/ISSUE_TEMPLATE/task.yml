@@ -1,0 +1,20 @@
+name: Task
+description: Record a unit of work that is neither a bug nor a feature
+type: Task
+labels:
+  - needs-triage
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: "One sentence: the outcome the work delivers."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: One sentence on why it matters now.
+    validations:
+      required: true
